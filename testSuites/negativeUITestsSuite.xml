@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <listeners>
+	<listener class-name = "ui.Listeners.Listeners" />
+</listeners>
+  <test thread-count="5" name="CheckoutErrorValidation">
+    <classes>
+      <class name="ui.tests.negativeTests.CheckoutTest"/> 
+    </classes>
+  </test>
+  
+   <test thread-count="5" name="LoginErrorValidation">
+    <classes>
+      <class name="ui.tests.negativeTests.LoginNegativeTest"/>
+    </classes>
+  </test> 
+  
+   <test thread-count="5" name="RegistrationErrorValidation">
+    <classes>
+      <class name="ui.tests.negativeTests.RegistrationNegativeTest"/>
+    </classes>
+  </test>
+  
+  <test thread-count="5" name="SearchAndAddToCartErrorValidation">
+    <classes>
+      <class name="ui.tests.negativeTests.SearchAndAddProductToCard"/>
+    </classes>
+  </test>
+
+</suite> 

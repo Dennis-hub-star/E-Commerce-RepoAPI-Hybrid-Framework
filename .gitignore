@@ -1,0 +1,5 @@
+# Ignore build output
+target/
+
+# Ignore token.properties file
+src/test/resources/api/token.properties

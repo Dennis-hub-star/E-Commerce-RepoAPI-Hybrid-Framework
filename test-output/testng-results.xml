@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-01T18:03:50 SAST" name="Suite" finished-at="2025-12-01T18:07:32 SAST" duration-ms="222158">
+    <groups>
+    </groups>
+    <test started-at="2025-12-01T18:03:50 SAST" name="Registration" finished-at="2025-12-01T18:07:32 SAST" duration-ms="222158">
+      <class name="ui.tests.positiveTests.Registration">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ui.tests.positiveTests.Registration@5167f57d]" started-at="2025-12-01T18:03:53 SAST" name="launchApplication" finished-at="2025-12-01T18:04:56 SAST" duration-ms="62519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testRegistration(java.util.HashMap)[pri:0, instance:ui.tests.positiveTests.Registration@5167f57d]" started-at="2025-12-01T18:04:56 SAST" name="testRegistration" data-provider="validRegistrationData" finished-at="2025-12-01T18:05:45 SAST" duration-ms="49158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=John, lastName=Trump, password=Test@1234, subscribeNewsletter=yes, confirmPassword=Test@1234, telephone=0723456789, email=john.trump, agreePrivacyPolicy=true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.positiveTests.Registration@5167f57d]" started-at="2025-12-01T18:05:45 SAST" name="tearDown" finished-at="2025-12-01T18:05:50 SAST" duration-ms="4718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:ui.tests.positiveTests.Registration@5167f57d]" started-at="2025-12-01T18:05:50 SAST" name="launchApplication" finished-at="2025-12-01T18:06:48 SAST" duration-ms="58165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="testRegistration(java.util.HashMap)[pri:0, instance:ui.tests.positiveTests.Registration@5167f57d]" started-at="2025-12-01T18:06:48 SAST" name="testRegistration" data-provider="validRegistrationData" finished-at="2025-12-01T18:07:26 SAST" duration-ms="38140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstName=Alice, lastName=Johnson, password=Test@9234, subscribeNewsletter=yes, confirmPassword=Test@9234, telephone=0723454444, email=alice.johnson, agreePrivacyPolicy=true}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:ui.tests.positiveTests.Registration@5167f57d]" started-at="2025-12-01T18:07:26 SAST" name="tearDown" finished-at="2025-12-01T18:07:32 SAST" duration-ms="6061" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ui.tests.positiveTests.Registration -->
+    </test> <!-- Registration -->
+  </suite> <!-- Suite -->
+</testng-results>
