@@ -17,6 +17,7 @@ import ui.utils.UiUtilities;
 public class APIUtilities {
 
 	private static String file = "api.global";
+	private static String tokenFile = "api.token";
 
 	/**
 	 * Generates a request specification with headers and base URI for API requests.
@@ -26,8 +27,13 @@ public class APIUtilities {
 	 */
 	public static RequestSpecification requestSpecification() throws IOException {
 
-		String token = Utilities.getGlobalValue("token", file);
-
+		String propToken = Utilities.getGlobalValue("token", tokenFile);
+	    String jenkinsToken = System.getenv("API_TOKEN");
+	    
+	    String token = (jenkinsToken != null && !jenkinsToken.isEmpty()) ? jenkinsToken : propToken;
+	    
+	    
+	    
 		HashMap<String, String> headers = new HashMap<String, String>();
 		headers.put("Accept", "application/vnd.github+json");
 		headers.put("X-GitHub-Api-Version", "2022-11-28");
@@ -77,4 +83,15 @@ public class APIUtilities {
 
 		return repoNames;
 	}
+	
+//	
+//	public static String getAPIToken() {
+//	    String jenkinsToken = System.getenv("API_TOKEN");
+//	    if (jenkinsToken != null && !jenkinsToken.isEmpty()) {
+//	        return jenkinsToken;
+//	    }
+//	    // Fallback for local execution
+//	    return properties.getProperty("apiToken");
+//	}
+
 }

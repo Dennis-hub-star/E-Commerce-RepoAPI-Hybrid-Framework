@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    
+    environment {
+        API_TOKEN = credentials('token') // ID you set in Jenkins
+    }
 
     parameters {
         choice(
