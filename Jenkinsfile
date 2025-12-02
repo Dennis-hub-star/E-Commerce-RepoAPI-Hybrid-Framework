@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    
+
     environment {
-        API_TOKEN = credentials('token') // ID you set in Jenkins
+        API_TOKEN = credentials('token')
     }
 
     parameters {
@@ -22,7 +22,9 @@ pipeline {
 
         stage('Run Selected Test Suite') {
             steps {
-                bat "mvn clean test -P%SUITE%"
+                withCredentials([string(credentialsId: 'token', variable: 'API_TOKEN')]) {
+                    bat "mvn clean test -P%SUITE%"
+                }
             }
         }
     }
