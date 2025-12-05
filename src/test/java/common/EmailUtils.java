@@ -1,4 +1,4 @@
-package ui.utils;
+package common;
 
 import java.util.Properties;
 import javax.mail.*;

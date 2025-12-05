@@ -1,4 +1,4 @@
-package ui.utils;
+package common;
 import java.io.*;
 import java.io.FileInputStream;
 import java.util.zip.ZipEntry;

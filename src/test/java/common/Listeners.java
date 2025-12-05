@@ -1,4 +1,4 @@
-package ui.Listeners;
+package common;
 
 import java.io.IOException;
 
@@ -11,7 +11,6 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
-import ui.ExtentReportsNG.ExtentReportsNG;
 import ui.base.BaseTest;
 import ui.utils.UiUtilities;
 

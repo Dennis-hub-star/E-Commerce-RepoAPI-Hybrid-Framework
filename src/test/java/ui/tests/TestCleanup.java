@@ -2,8 +2,8 @@ package ui.tests;
 
 import org.testng.annotations.AfterSuite;
 
-import ui.utils.EmailUtils;
-import ui.utils.ZipUtils;
+import common.EmailUtils;
+import common.ZipUtils;
 
 /**
  * This class contains cleanup tasks to be performed after the test suite execution.
